@@ -1,0 +1,1 @@
+*Add control panel item to set link to collective of all initiatives

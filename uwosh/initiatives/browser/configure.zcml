@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.theme">
+
+	<browser:viewlet
+        name="uwosh.initiatives"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+        class=".initiatives.InitiativesViewlet"
+				layer="uwosh.initiatives.browser.interfaces.IUWOshInitiativesLayer"
+        permission="zope2.View" />
+</configure>

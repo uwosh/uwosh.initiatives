@@ -1,0 +1,4 @@
+<layers>
+    <layer name="uwosh.initiatives" 
+           interface="uwosh.initiatives.browser.interfaces.IUWOshInitiativesLayer" />
+</layers>

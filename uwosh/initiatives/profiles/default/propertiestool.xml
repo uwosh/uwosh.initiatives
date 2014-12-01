@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_properties">
+ 	<object name="uwosh_initiatives" meta_type="Plone Property Sheet">
+  		<property name="title">uwosh.initiatives properties</property>
+  		<property name="number_of_initiatives_to_show" type="int">3</property>
+			<property name="only_show_in_site_root" type="boolean">True</property>
+			<property name="view_all_url" type="string"></property>
+ 	</object>
+</object>

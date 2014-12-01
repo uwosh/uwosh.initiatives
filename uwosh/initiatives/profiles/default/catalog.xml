@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+ <index name="showInitiative" meta_type="FieldIndex">
+  <indexed_attr value="showInitiative"/>
+ </index>
+ <column value="showInitiative"/>
+
+ <index name="externalWindow" meta_type="FieldIndex">
+  <indexed_attr value="externalWindow"/>
+ </index>
+ <column value="externalWindow"/>
+
+</object>

@@ -1,0 +1,37 @@
+Changelog
+=========
+0.3.8b1
+----------------
+*option for opening links to initiatives in another window or in the current window
+
+0.3.7b1
+----------------
+*uses portal catalog for sorting and reordering
+
+0.3.6b1
+----------------
+*uses portal catalog to search initiatives
+*initiatives with external links now open in a new window
+
+0.3.5b1
+----------------
+*option to show certain initiatives
+*ordering of initiatives
+*option to link to external sites
+
+
+0.3.3b1
+----------------
+*now creates initiatives folder on install
+*removes structure in GS because it was destroying everything that was on
+the site before.
+
+0.3.2b1
+----------------
+*fixed import step error(it deesn't try to put the state of an initiatives folder to public anymore)
+
+0.1 - Unreleased
+----------------
+
+* Initial release
+

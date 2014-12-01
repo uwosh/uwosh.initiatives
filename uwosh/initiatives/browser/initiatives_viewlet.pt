@@ -1,0 +1,35 @@
+<div id="uwoshInitiatives" tal:condition="view/should_display">
+	<h2 tal:content="string: ${view/sitetitle} Initiatives"></h2>
+	<ul>
+
+		<tal:initiatives tal:repeat="initiative view/initiatives">
+
+			<div tal:condition="python:initiative.getRemoteUrl == '' and initiative.externalWindow is True">
+			  <li>	     	
+				  <a tal:attributes="href initiative/getURL" tal:content="initiative/Title" target="_blank" />
+			  </li>
+			</div>
+			<div tal:condition="python:initiative.getRemoteUrl == '' and initiative.externalWindow is False">
+			  <li>	     	
+				  <a tal:attributes="href initiative/getURL" tal:content="initiative/Title" />
+			  </li>
+			</div>
+
+			<div tal:condition="python:initiative.getRemoteUrl != '' and initiative.externalWindow is True">
+			  <li>
+				  <a tal:attributes="href initiative/getRemoteUrl" 
+				    tal:content="initiative/Title" target="_blank"/>
+			   </li>
+			</div>
+			<div tal:condition="python:initiative.getRemoteUrl != '' and initiative.externalWindow is False">
+			  <li>
+				  <a tal:attributes="href initiative/getRemoteUrl" 
+				    tal:content="initiative/Title"/>
+			   </li>
+			</div>	
+    
+		</tal:initiatives>
+	</ul>
+	<a 	tal:attributes="href view/view_all_url" 
+			tal:condition="python: view.view_all_url is not None and len(view.view_all_url) > 0">more</a>
+</div>
